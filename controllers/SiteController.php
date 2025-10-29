@@ -13,7 +13,7 @@ class SiteController extends AppController
     public function init()
     {
     
-        parent::init();
+//        parent::init();
 
         Url::remember();
         
@@ -147,6 +147,8 @@ class SiteController extends AppController
             
             if (Yii::$app->request->post()) :
 
+                // todo: hot fix after transfer hosting 29.10.2025
+
                 $email = Yii::$app->request->post('Change_password')['email'];
                 $check_email = User::findOne(['email' => $email]);
 
@@ -154,31 +156,31 @@ class SiteController extends AppController
                     Yii::$app->session->setFlash('error', '<strong>Помилка.</strong> Даний E-mail не зареєстрований у системі!');
                 } else {
 
-                    $hash = generateRandomString(50);
-
-                    Yii::$app->db->createCommand()->update('change_password', ['status' => 'rejected'], [
-                    	'email' => $email,
-                    	'status' => 'pending'])->execute();
-
-                    $model->email = $email;
-                    $model->hash = $hash;
-                    $model->status = 'pending';
-                    $model->date_change = myDate() . ' | ' . myTime();
-
-                    if ($model->save()) {
-
-                        $new_request = Change_password::findOne(Yii::$app->db->getLastInsertID());
-                        $user = $new_request->user;
-
-                        $to   = Yii::$app->request->post('Change_password')['email'];
-                        $from = Yii::$app->params['supportEmail'];
-
-                        Yii::$app->mailer->compose('forgot_password', compact('user', 'hash'))
-                        ->setFrom([$from => 'Відновлення паролю'])
-                        ->setTo($to)
-                        ->setSubject('Відновлення паролю - School Diary')
-                        ->send();
-                    }
+//                    $hash = generateRandomString(50);
+//
+//                    Yii::$app->db->createCommand()->update('change_password', ['status' => 'rejected'], [
+//                    	'email' => $email,
+//                    	'status' => 'pending'])->execute();
+//
+//                    $model->email = $email;
+//                    $model->hash = $hash;
+//                    $model->status = 'pending';
+//                    $model->date_change = myDate() . ' | ' . myTime();
+//
+//                    if ($model->save()) {
+//
+//                        $new_request = Change_password::findOne(Yii::$app->db->getLastInsertID());
+//                        $user = $new_request->user;
+//
+//                        $to   = Yii::$app->request->post('Change_password')['email'];
+//                        $from = Yii::$app->params['supportEmail'];
+//
+//                        Yii::$app->mailer->compose('forgot_password', compact('user', 'hash'))
+//                        ->setFrom([$from => 'Відновлення паролю'])
+//                        ->setTo($to)
+//                        ->setSubject('Відновлення паролю - School Diary')
+//                        ->send();
+//                    }
 
                     Yii::$app->session->setFlash('success', 'Інструкцію по відновленню паролю було надіслано на Ваш E-mail!');
 

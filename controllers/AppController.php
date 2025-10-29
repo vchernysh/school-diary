@@ -81,6 +81,9 @@ class AppController extends Controller
 
     public function init()
     {
+        if (Yii::$app->user->isGuest) {
+            return $this->redirect('/site/login');
+        }
         $this->___system_settings = SystemSettings::findOne(1);
 
         if ($this->___system_settings->stop === 1) {

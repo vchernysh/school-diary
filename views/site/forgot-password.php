@@ -22,7 +22,7 @@ use yii\bootstrap\ActiveForm;
         ],
     ]); ?>
 
-        <?= $form->field($model, 'email')->textInput(['autofocus' => true, 'autocomplete' => 'off', 'placeholder' => 'Впишіть Ваш E-mail, щоб відновити пароль', 'value' => $request['email']]) ?>
+        <?= $form->field($model, 'email')->textInput(['autofocus' => true, 'autocomplete' => 'off', 'placeholder' => 'Впишіть Ваш E-mail, щоб відновити пароль', 'value' => $request['email'] ?? '']) ?>
 
         <div class="form-group">
             <div class="col-lg-12">

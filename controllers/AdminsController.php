@@ -12,7 +12,9 @@ class AdminsController extends AppController
 
     public function init()
     {
-
+        if (Yii::$app->user->isGuest) {
+            return $this->redirect('/site/login');
+        }
         parent::init();
 
         Url::remember();
