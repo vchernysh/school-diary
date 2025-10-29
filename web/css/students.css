@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+.students-view-marks-flex-block-wrap .inline-label {
+	margin-left: 0;
+}
+
+@media (min-width:1200px) 
+{
+    
+/*__ @media (min-width:1200px) ___*/
+}
+
+@media (min-width:992px) and (max-width:1199px) 
+{
+
+/*__ @media (min-width:992px) and (max-width:1199px) ___*/
+}
+
+@media (min-width:768px) and (max-width:991px) 
+{
+	.navbar-nav > li > a {
+	    padding: 15px 11px;
+	}
+
+/*__ @media (min-width:768px) and (max-width:991px) ___*/
+}
+
+@media (max-width:991px) 
+{
+
+/*__ @media (max-width:991px) ___*/
+}
+
+@media (max-width:767px) 
+{
+
+/*__ @media (max-width:767px) ___*/
+}

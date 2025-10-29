@@ -1,0 +1,25 @@
+canvas {
+	width: 100%;
+}
+
+.chart-container {
+	position: relative;
+	margin: auto;
+	height: 300px;
+	width: 100%;
+	padding: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
+}
+.filter-search-marks-wrap-block .flex-block {
+	margin-bottom: 20px;
+}
+.wrap-chart-block {
+	display: none;
+	padding: 0px 20px;
+}
+.students-view-marks-flex-block-wrap .inline-label {
+	display: flex;
+}

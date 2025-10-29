@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+.checkbox-subjects-wrap {
+    margin-top: 10px;
+}
+
+@media (min-width:1200px) 
+{
+    
+/*__ @media (min-width:1200px) ___*/
+}
+
+@media (min-width:992px) and (max-width:1199px) 
+{
+	.nav > li > a {
+	    padding: 15px 9px;
+	}
+/*__ @media (min-width:992px) and (max-width:1199px) ___*/
+}
+
+@media (min-width:768px) and (max-width:991px) 
+{
+	.nav > li > a {
+	    padding: 15px 8px;
+	}
+
+/*__ @media (min-width:768px) and (max-width:991px) ___*/
+}
+
+@media (max-width:991px) 
+{
+
+/*__ @media (max-width:991px) ___*/
+}
+
+@media (max-width:767px) 
+{
+	.paragraph_with_links a {
+		margin-bottom:10px;
+	}
+	.assigned_buttons br {
+		display: none;
+	}
+	.assigned_buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 20px 0;
+	}
+	.assigned_buttons button {
+		margin:10px;
+	}
+	.assigned_buttons .btn-assign.btn-success,
+	.assigned_buttons .btn-revoke.btn-danger {
+		-moz-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+	.teachers-access-view code a {
+		word-break: break-word;
+	}
+
+/*__ @media (max-width:767px) ___*/
+}

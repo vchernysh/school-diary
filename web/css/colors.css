@@ -1,0 +1,187 @@
+/*.excellent_mark {
+    color: #0F0 !important;
+}
+.good_mark {
+    color: #ffca00 !important;
+}*/
+.bad_mark {
+    color: #F00 !important;
+    font-weight: 600;
+}
+.btn-closed {
+    background: #000;
+    color:#FFF;
+}
+a.btn-closed:hover {
+    color:#FFF;
+    opacity: .8;
+}
+a.btn-closed:focus {
+    color:#FFF;
+}
+.btn-pending {
+    background: #259448;
+}
+.btn-admin {
+    background: #222;
+}
+.btn-director {
+    background: #337ab7;
+}
+.btn-teacher {
+    background: #d9534f;
+}
+.btn-student {
+    background: #5bc0de;
+}
+.btn-parent {
+    background: #5cb85c;
+}
+.btn-mother {
+    background:#A52A2A;
+    color: #FDF4E3;
+}
+.btn-father {
+    background: #008000;
+    color: #FDF4E3;
+}
+.btn-sister {
+    background: #2C75FF;
+    color: #FDF4E3;
+}
+.btn-brother {
+    background: #000000;
+    color: #FDF4E3;
+}
+.btn-grandmother {
+    background: #800080;
+    color: #FDF4E3;
+}
+.btn-grandfather {
+    background: #808000;
+    color: #FDF4E3;
+}
+.btn-error {
+    background: #A52A2A;
+    color: #FFF;
+}
+.btn-idea {
+    background: #008000;
+    color: #FFF;
+}
+.btn-complaint {
+    background: #1e1eaf;
+    color: #FFF;
+}
+.btn-other {
+    background: #808080;
+    color: #FFF;
+}
+.btn-opened {
+    background: #008000;
+    color: #FFF;
+}
+a.btn-opened:hover {
+    color:#FFF;
+    opacity: .8;
+}
+a.btn-opened:focus {
+    color:#FFF;
+}
+.fa-school_diary.fa-unlock {
+    color:#008000;
+}
+.fa-school_diary.fa-lock {
+    color:#000;
+}
+.several-lessons-background {
+    background: #ffff00;
+}
+.btn-edit-lessons-schedule {
+    background-color: #cfc9ff;
+    border-color: #5c5c5c;
+    color: #000;
+    margin: 5px;
+}
+.btn-edit-lessons-schedule i {
+    margin-left: 5px;
+}
+.btn-was-not {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    cursor: default;
+    padding: 0px 6px;
+    font-size: 14px;
+    line-height: 1.1;
+}
+.btn-was-not:hover {
+    color: #fff;
+    background-color: #ac2925;
+    border-color: #761c19;
+}
+
+.btn-was-without-a-valid-reason {
+    color: #fff;
+    background-color: #514fd9;
+    border-color: #3d3be5;
+    cursor: default;
+    padding: 0px 6px;
+    font-size: 14px;
+    line-height: 1.1;
+}
+.btn-was-without-a-valid-reason:hover {
+    color: #fff;
+    background-color: #1c19c2;
+    border-color: #171bb4;
+}
+
+.btn-was-sick {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    cursor: default;
+    padding: 0px 6px;
+    font-size: 14px;
+    line-height: 1.1;
+}
+.btn-was-sick:hover {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+.was-not-bg {
+    background: #ffd8d8;
+    font-weight: 600;
+}
+.result-bg,
+.under-title-marks-table {
+    background: #e2fff8;
+}
+.my_tr:hover,
+.selected-cells {
+    background: #ceffea !important;
+}
+.selected-cells-was-not {
+    background: #f8bebe !important;
+}
+.btn-yes {
+    color: #FFF;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+.btn-no {
+    background: #449d44;
+    border-color: #398439;
+    color: #FFF;
+}
+.btn-active-payment {
+    background: #449d44;
+    border-color: #398439;
+    color: #FFF;
+}
+.btn-not-active-payment {
+    color: #FFF;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}

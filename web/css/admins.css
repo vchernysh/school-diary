@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.nav-wrap-flex-li .fa.fa-telegram {
+	color: #2baae3;
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+    left: 3px;
+}
+.nav-wrap-flex-li.active .fa.fa-telegram {
+	color:#FFF;
+}
+.admin-payments-table-of-sums th,
+.admin-payments-table-of-sums td {
+	text-align: center;
+	vertical-align: middle;
+}
+.asjfijsai3uh9djxw {
+	display: none !important;
+}
+.admins-sum-table th,
+.admins-sum-table td {
+	text-align: center;
+	width: auto !important;
+	vertical-align: middle !important;
+}
+
+@media (min-width:1200px) 
+{
+    
+/*__ @media (min-width:1200px) ___*/
+}
+
+@media (min-width:992px) and (max-width:1199px) 
+{
+
+/*__ @media (min-width:992px) and (max-width:1199px) ___*/
+}
+
+@media (min-width:768px) and (max-width:991px) 
+{
+	.nav > li > a {
+		padding-left:10px;
+		padding-right:10px;
+	}
+
+/*__ @media (min-width:768px) and (max-width:991px) ___*/
+}
+
+@media (max-width:991px) 
+{
+
+/*__ @media (max-width:991px) ___*/
+}
+
+@media (max-width:767px) 
+{
+
+	.nav-wrap-flex-li .fa.fa-telegram {
+		color:#FFF;
+	}
+
+/*__ @media (max-width:767px) ___*/
+}
